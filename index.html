@@ -24,9 +24,12 @@
     <!-- Icon for website -->
     <link rel="icon" href="images/logo_icon.ico">
 
+    
 </head>
 
 <body id="page-top" class="index" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- loading animation -->
+<div class="se-pre-con"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -282,6 +285,9 @@
         </footer>
         </div>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    
      <!-- Lightbox Javascript -->
     <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
     <script type="text/javascript" src="lightbox/js/lightbox.min.css"></script>
@@ -295,7 +301,12 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-
+    <script type="text/javascript">
+        $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+    </script>
 <!-- created by edison villarta -->
 </body>
 
